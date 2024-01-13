@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 body {
-  background-color: #000300;
+  background-image: url(/public/portfolio-background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.img-shadow {
-  box-shadow: -5px 5px 10px #00df9a;
+div {
+  display: flex;
 }
