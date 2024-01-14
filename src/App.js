@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import { Header } from "./Component/header";
 import { AboutMe } from "./Component/AboutMe";
-import { Footer } from "./Component/Footer";
 import { Projects } from "./Component/Projects";
 
+export const AppContext = createContext();
+
 function App() {
+  const [showProjects, setShowProjects] = useState(false);
+
   return (
     <div className="d-flex flex-col h-screen w-screen">
-      <Header />
-      <Projects />
-      <Footer />
+      <AppContext.Provider value={{ showProjects, setShowProjects }}>
+        <Header />
+        {!showProjects ? <AboutMe /> : ""}
+        <Projects />
+      </AppContext.Provider>
     </div>
   );
 }

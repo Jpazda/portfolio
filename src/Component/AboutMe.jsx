@@ -1,9 +1,15 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { AppContext } from "../App";
 
 export const AboutMe = () => {
+  const { showProjects, setShowProjects } = useContext(AppContext);
+
+  const handleClick = () => {
+    setShowProjects(!showProjects);
+  };
+
   return (
-    <div className="d-flex flex-col w-[50%] items-center justify-around mt-[200px] h-[40%] p-[40px]">
+    <div className="d-flex flex-col w-[50%] items-center justify-around mt-[100px] 2xl:mt-[200px] h-[40%] p-[40px] gap-[40px] ease-in duration-500">
       <div className="text-[60px] font-bold mt-[20px]"> About me</div>
       <p className="text-xl">
         I'm a full stack developer with experience in HTML, CSS, React,
@@ -19,6 +25,7 @@ export const AboutMe = () => {
         className="border border-black h-[75px] w-[200px] 
                             rounded-md text-white text-lg 
                             font-semibold bg-black hover:scale-95"
+        onClick={handleClick}
       >
         View my work
       </button>
