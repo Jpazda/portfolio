@@ -34,7 +34,7 @@ export const Projects = () => {
         />
         <Project
           name="Messaging App"
-          description="Book exchange platform created with React, Flask, PostgreSQL, and Bootstrap"
+          description="Messaging App created using React, React Router, Context API and Google's Firebase Database."
           repoURL="https://github.com/Jpazda/Jpazda-messaging-app"
         />
       </div>
