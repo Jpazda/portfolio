@@ -10,7 +10,7 @@ export const Header = () => {
     <div className="md:h-[40px] 2xl:h-[70px] d-flex flex-row items-center justify-around w-screen p-[10px] md:p-[40px] 2xl:p-[75px]">
       <div className="d-flex flex-col md:flex-row items-center md:gap-[25px]">
         <div className="text-[20px] md:text-[40px] 2xl:text-[65px] d-flex font-extrabold">John Pazda</div>
-        <p className="text-[10px] md:text-[25px] font-semibold">- Software Developer</p>
+        <p className="text-[10px] md:text-[25px] font-semibold">-Software Developer</p>
       </div>
         <img
           src={react}
