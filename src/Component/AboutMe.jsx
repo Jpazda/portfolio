@@ -9,9 +9,9 @@ export const AboutMe = () => {
   };
 
   return (
-    <div className="d-flex flex-col w-[50%] items-center justify-around mt-[100px] 2xl:mt-[200px] h-[40%] p-[40px] gap-[40px] ease-in duration-500">
-      <div className="text-[60px] font-bold mt-[20px]"> About me</div>
-      <p className="text-xl">
+    <div className="d-flex flex-col w-[100%] md:w-[50%] items-center justify-around mt-[100px] 2xl:mt-[200px] h-[40%] p-[40px] gap-[20px] md:gap-[40px] ease-in duration-500">
+      <div className="text-[30px] md:text-[60px] font-bold mt-[20px]"> About me</div>
+      <p className="text-[15px] md:text-xl">
         I'm a full stack developer with experience in HTML, CSS, React,
         Javascript, Python Flask, PostgreSQL, Tailwind CSS, Bootstrap,
         Agile/Scrum, Git, Tableau and Jira. I studied Finance in college, and
@@ -24,7 +24,7 @@ export const AboutMe = () => {
       <button
         className="border border-black h-[75px] w-[200px] 
                             rounded-md text-white text-lg 
-                            font-semibold bg-black hover:scale-95"
+                            font-semibold bg-black hover:scale-95 mt-[20px] md:mt-[0px]"
         onClick={handleClick}
       >
         View my work

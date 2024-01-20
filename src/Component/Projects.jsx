@@ -11,12 +11,12 @@ export const Projects = () => {
 
   return (
     <div
-      className={`d-flex flex-col w-[70%] mt-[25px] 2xl:mt-[100px] items-center h-[70%] p-[40px] mb-[200px] absolute left-0 -translate-x-full transition-all duration-500 ease-in-out ${
+      className={`d-flex flex-col w-[100%] md:w-[70%] mt-[25px] 2xl:mt-[100px] items-center h-[70%] p-[40px] mb-[200px] absolute left-0 -translate-x-full transition-all duration-500 ease-in-out ${
         showProjects ? "translate-x-0" : ""
       }`}
     >
       <div className="text-[40px] 2xl:text-[60px] font-bold mt-[20px]">My Projects</div>
-      <div className="w-full grid grid-cols-1 2xl:grid-cols-2 gap-[40px] items-center justify-center mt-[40px]">
+      <div className="w-full grid grid-cols-1 2xl:grid-cols-2 gap-[20px] md:gap-[30px] xl:gap-[40px] items-center justify-center mt-[40px]">
         <Project
           name="ShelfShare"
           description="Book exchange platform created with React, Flask, PostgreSQL, and Bootstrap"

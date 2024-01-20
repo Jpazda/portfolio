@@ -12,8 +12,8 @@ function App() {
     <div className="d-flex flex-col h-screen w-screen">
       <AppContext.Provider value={{ showProjects, setShowProjects }}>
         <Header />
-        {!showProjects ? <AboutMe /> : ""}
-        <Projects />
+         { !showProjects ? <AboutMe /> : ""}
+         <Projects />
       </AppContext.Provider>
     </div>
   );
