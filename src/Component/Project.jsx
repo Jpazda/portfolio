@@ -6,7 +6,7 @@ export const Project = ({ name, description, repoURL }) => {
   };
   return (
     <div
-      className="d-flex justify-self-center flex-col items-center justify-center w-[200px] h-[95px] md:w-[400px] md:h-[100px] xl:w-[300] xl:h-[150] text-white bg-[#144f5d] p-[15px] border-2 rounded-[30px] md:rounded-[40px] border-white hover:scale-95 cursor-pointer"
+      className="d-flex justify-self-center flex-col items-center justify-center w-[275px] h-[80px] md:w-[425px] md:h-[100px] xl:w-[300] xl:h-[150] text-white bg-[#144f5d] p-[20px] border-2 rounded-[30px] md:rounded-[40px] border-white hover:scale-95 cursor-pointer"
       onClick={handleClick}
     >
       <p className="text-[15px] md:text-2xl font-bold mb-[8px]">{name}</p>
