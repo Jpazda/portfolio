@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Project } from "./Project";
 import { AppContext } from "../App";
+import { Cursor, Typewriter } from "react-simple-typewriter";
 
 export const Projects = () => {
   const { showProjects, setShowProjects } = useContext(AppContext);
@@ -15,7 +16,12 @@ export const Projects = () => {
         showProjects ? "translate-x-0" : ""
       }`}
     >
-      <div className="text-[40px] 2xl:text-[60px] font-bold mt-[20px]">My Projects</div>
+      <div>
+        <div className="text-[40px] 2xl:text-[60px] font-bold mt-[20px]">
+          My Projects -
+        </div>
+        <div className="text-[40px] 2xl:text-[60px] font-bold mt-[20px] ml-[10px]"><Typewriter words={['React', 'Python', 'Tailwind CSS', 'PostreSQL', 'Bootstrap', 'React Router', 'Context API', 'Git']} cursor cursorStyle='_' loop={false} /> </div>
+      </div>
       <div className="w-full grid grid-cols-1 2xl:grid-cols-2 gap-[20px] md:gap-[20px] xl:gap-[40px] items-center justify-center mt-[40px]">
         <Project
           name="ShelfShare"
@@ -27,7 +33,7 @@ export const Projects = () => {
           description="Wordle for 6 letter words created using React."
           repoURL="https://github.com/Jpazda/Wordle-remake"
         />
-         <Project
+        <Project
           name="Messaging App"
           description="Messaging App created using React, React Router, Context API and Google's Firebase Database."
           repoURL="https://github.com/Jpazda/Jpazda-messaging-app"
