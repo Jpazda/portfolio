@@ -16,11 +16,11 @@ export const Projects = () => {
         showProjects ? "translate-x-0" : ""
       }`}
     >
-      <div>
-        <div className="text-[40px] 2xl:text-[60px] font-bold mt-[20px]">
+      <div className="flex items-center">
+        <div className="text-[22px] 2xl:text-[60px] font-bold mt-[20px]">
           My Projects -
         </div>
-        <div className="text-[40px] 2xl:text-[60px] font-bold mt-[20px] ml-[10px]"><Typewriter words={['React', 'Python', 'Tailwind CSS', 'PostreSQL', 'Bootstrap', 'React Router', 'Context API', 'Git']} cursor cursorStyle='_' loop={false} /> </div>
+        <div className="text-[22px] 2xl:text-[60px] font-bold mt-[20px] ml-[10px]"><Typewriter words={['React', 'Python', 'Tailwind CSS', 'PostreSQL', 'Bootstrap', 'React Router', 'Context API', 'Git']} cursor cursorStyle='_' loop={false} /> </div>
       </div>
       <div className="w-full grid grid-cols-1 2xl:grid-cols-2 gap-[20px] md:gap-[20px] xl:gap-[40px] items-center justify-center mt-[40px]">
         <Project
