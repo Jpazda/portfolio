@@ -26,7 +26,7 @@ export const Projects = () => {
         <Project
           name="ShelfShare"
           description="Book exchange platform created with React, Flask, PostgreSQL, and Bootstrap."
-          repoURL="https://github.com/Jpazda/Jpazda-ShelfShare"
+          repoURL="https://symphonious-gelato-2b7fa1.netlify.app/"
         />
         <Project
           name="6 Letter Wordle"
